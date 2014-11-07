@@ -8,6 +8,8 @@
 # environment variables
 export EDITOR="$(if [[ -n $DISPLAY ]]; then echo 'leafpad'; else echo 'nano'; fi)"	# leafpad, nano
 
+PS1='\[\e[0;32m\]\u\[\e[m\] \[\e[1;34m\]\w\[\e[m\] \[\e[1;32m\]\$\[\e[m\] \[\e[1;37m\]'
+
 # pacman aliases (if desired, adapt for your favourite AUR helper)
 alias pac="sudo /usr/bin/pacman -S"		# default action	- install one or more packages
 alias pacu="sudo /usr/bin/pacman -Syu"		# '[u]pdate'		- upgrade all packages to their newest version
@@ -33,3 +35,4 @@ alias pcc='profile-cleaner c'
 alias yd='youtube-dl'
 alias lcp='sudo localepurge'
 alias lcc='sudo /usr/bin/localepurge-config'
+alias speed='speedtest-cli'
